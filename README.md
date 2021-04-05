@@ -15,6 +15,9 @@ You can't write code in the files of the folders: StylesCSS, node_modules, js, p
 
 You can write code in the folder src and add images in the folder miming and videos in the folder video.
 
+### Where I can see the website?
+Click [here](https://outdooroasisfest.netlify.app "here") to see the website.
+
 thanks por read! :D
 
 *Spanish version*
@@ -33,5 +36,9 @@ Abra de gulpfile.js y vea las exportaciones. Las exportaciones son comandos para
 No puede escribir código en los archivos de las carpetas: StylesCSS, node_modules, js, postcss.config.js, package.json y package-lock.json.
 
 Puede escribir código en la carpeta src y agregar imágenes en la carpeta imitando y videos en la carpeta video.
+
+### Donde puedo ver la página web?
+
+Click [aqui](https://outdooroasisfest.netlify.app "aqui") para ver la página.
 
 Gracias por leer! :D
