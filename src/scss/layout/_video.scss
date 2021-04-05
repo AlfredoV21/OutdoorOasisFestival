@@ -1,0 +1,42 @@
+.video {
+    position: relative;
+    max-height: 50rem;
+    overflow: hidden;
+    .video__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1a2238+0,ffffff+100&1+0,0.5+100 */
+        background: -moz-linear-gradient(top,  rgba(26,34,56,1) 0%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(26,34,56,1) 0%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(26,34,56,1) 0%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2238', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
+    }
+
+    video {
+        display: block;
+        width: 100%;
+    }
+}
+
+.content__video {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 10rem;
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $White;
+        font-size: 6rem;
+
+        span {
+            font-size: 2.5rem;
+            border-radius: .5rem;
+            padding: 0 .5rem;
+        }
+    }
+}
+

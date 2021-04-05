@@ -1,0 +1,28 @@
+.about-festival {
+    padding: $Separation 0;
+    @include tablet {
+        @include grid(2, $Separation)
+    }
+}
+.about-festival__image--image {
+    border-radius: .5rem;
+}
+
+.about-festival__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-size: 4rem;
+        line-height: 2;
+    }
+
+    .about-festival__content--date {
+        color: $DBlue;
+        font-weight: $BoldF;
+    }
+
+    .about-festival__content--text {
+        line-height: 1.5;
+    }
+}

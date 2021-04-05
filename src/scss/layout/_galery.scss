@@ -1,0 +1,58 @@
+.galery {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.galery__images {
+    padding: 0;
+    list-style: none;
+    margin-top: 3rem;
+    @include grid(2, 3rem);
+
+    @include tablet {
+        @include grid(4, $Separation / 2)
+    }
+
+    @include desktop {
+        @include grid(6, $Separation / 2)
+    }
+}
+
+.image__edit {
+    border-radius: .5rem;
+}
+
+.overlay {
+    position: fixed;    
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+
+    img {
+        width: 45%;
+        border-radius: .5rem;
+    }
+}
+
+.close-btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: $DBlue;
+    display: grid;
+    place-items: center;
+    color: $White;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid $Black;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+// With this, all documet lost the scroll
+.class-body {
+    overflow: hidden;
+}

@@ -1,0 +1,74 @@
+.lineup {
+    background-color: $DBlue;
+    padding: 3rem;
+
+    h3, p {
+        text-align: center;
+        color: $White;
+    }
+
+    .day { 
+        text-transform: uppercase;
+        padding: 1.5rem; 
+    }
+}
+
+.scenaries-container {
+    @include tablet {
+        @include grid(2, 3rem)
+    }
+
+    .scenary-name {
+        color: $Black;
+        font-size: 2rem;
+        font-weight: $SkinnyF;
+
+        &:after {
+            content: '';
+            width: 15rem;
+            height: 10rem;
+            display: block;
+            margin: .5rem auto 0 auto;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.scenary {
+    border-radius: .5rem;
+}
+
+.edm .scenary-name {
+    &:after {
+        background-image: url(/minimg/icono_edm.png);
+    }
+}
+
+.rock .scenary-name {
+    &:after { 
+        background-image: url(/minimg/icono_rock.png);
+    }
+}
+
+.claendary {
+    padding: 0;
+    list-style: none;
+    li {
+        padding: 1.5rem;
+        font-weight: $BoldF;
+
+        span {
+            font-weight: $RegularF;
+        }
+    }
+}
+
+.bg-orange .claendary li:nth-child(odd) {
+    background-color: darken($Orange, 5);
+}
+
+.bg-acua .claendary li:nth-child(odd) {
+    background-color: darken($Acua, 5);
+}

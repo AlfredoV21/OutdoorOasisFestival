@@ -1,0 +1,45 @@
+//Style of the Header
+.header {
+    background-color: $DBlue;
+    .header-content {
+        padding: $Separation / 2 0;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    h1 {
+        color: $White;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &.fix {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .3rem $DBlue;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    a {
+        color: $White;
+        font-size: 2rem;
+
+        &:hover {
+            color: $Yellow;
+        }
+    }
+}
+
